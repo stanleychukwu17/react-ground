@@ -14,5 +14,12 @@ class Car extends React.Component {
     }
 }
 
+function Jones (props) {
+    return (
+        <div>my name is jones</div>
+    );
+}
 
-ReactDOM.render(<Car />, document.getElementById('root'));
+
+ReactDOM.render(<Car  />, document.getElementById('root'));
+ReactDOM.render(<Jones  />, document.getElementById('boot'));
