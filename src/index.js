@@ -8,10 +8,6 @@ class Car extends React.Component {
         this.state = {'color':'blue'};
     }
 
-    static getDerivedStateFromProps(props) {
-        return {'color':'gray'};
-    }
-
     changeColor (color) {
         let nxt = (this.state.color === 'blue') ? 'red' : 'blue';
         this.setState({color: nxt});
@@ -19,7 +15,7 @@ class Car extends React.Component {
     }
 
     getSnapshotBeforeUpdate (prevP, prevState) {
-        
+        console.log(prevP, prevState)
     }
 
     render () {
