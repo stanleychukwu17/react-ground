@@ -14,10 +14,6 @@ class Car extends React.Component {
         console.log(nxt, color);
     }
 
-    getSnapshotBeforeUpdate (prevP, prevState) {
-        console.log(prevP, prevState)
-    }
-
     render () {
         return (
             <div>
