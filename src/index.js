@@ -10,7 +10,7 @@ class Car extends React.Component {
 
     changeColor (color) {
         let nxt = (this.state.color === 'blue') ? 'red' : 'green';
-        console.log(nxt);
+        console.log(nxt, color);
     }
 
     render () {
