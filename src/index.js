@@ -18,10 +18,6 @@ class Car extends React.Component {
         console.log(prevP, prevState)
     }
 
-    componentDidUpdate () {
-        console.log('update don finish', this.state);
-    }
-
     render () {
         return (
             <div>
