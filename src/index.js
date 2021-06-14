@@ -8,10 +8,18 @@ class Car extends React.Component {
         this.state = {'color':'blue'};
     }
 
+    static getDerivedStateFromProps(props) {
+        return {'color':'gray'};
+    }
+
     changeColor (color) {
         let nxt = (this.state.color === 'blue') ? 'red' : 'blue';
         this.setState({color: nxt});
         console.log(nxt, color);
+    }
+
+    getSnapshotBeforeUpdate (prevP, prevState) {
+        
     }
 
     render () {
@@ -31,5 +39,5 @@ function Jones (props) {
 }
 
 
-ReactDOM.render(<Car  />, document.getElementById('root'));
+ReactDOM.render(<Car color="orange" />, document.getElementById('root'));
 ReactDOM.render(<Jones  />, document.getElementById('boot'));
