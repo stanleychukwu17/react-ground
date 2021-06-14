@@ -2,6 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const myfirstelement = <h1>Hello React! From</h1>
+class Car extends React.Component {
+    constructor (props) {
+        super(props);
+    }
 
-ReactDOM.render(myfirstelement, document.getElementById('root'));
+    render () {
+        return (
+            <div>This is my car</div>
+        );
+    }
+}
+
+
+ReactDOM.render(<Car />, document.getElementById('root'));
