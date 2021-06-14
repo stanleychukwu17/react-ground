@@ -17,7 +17,7 @@ class Car extends React.Component {
         return (
             <div>
                 <div>This is my car {this.state.color}</div>
-                <div><button onClick={this.changeColor}>change color</button></div>
+                <div><button onClick={this.changeColor.bind(this, 'yellow')}>change color</button></div>
             </div>
         );
     }
