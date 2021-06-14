@@ -19,7 +19,7 @@ class Car extends React.Component {
     }
 
     componentDidUpdate () {
-        console.log('update don finish');
+        console.log('update don finish', this.state);
     }
 
     render () {
