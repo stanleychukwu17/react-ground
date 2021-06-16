@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
+// what i learnt from my redux tutorials today
+
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
