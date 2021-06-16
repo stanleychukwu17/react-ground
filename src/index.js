@@ -8,6 +8,7 @@ kal.forEach(num => {
     if (num === 2) { jon.push(4); }
     jon.push(num);
 });
+console.log(jon);
 
 class Car extends React.Component {
     constructor (props) {
