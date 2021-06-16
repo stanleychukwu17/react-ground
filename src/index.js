@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-//now we test immutability for arrays - method 2
+//now we test immutability for arrays - method 3
 let kal = [1,2,3], jon = [];
-kal.forEach(num => { if (num === 2) { jon.push(4); } jon.push(num); });
-console.log(jon);
+let ind = kal.indexOf(2);
+let c1 = kal.splice(0, ind);
+let c3 = kal.splice(ind - 1);
+console.log(ind, c1, c3);
 
 class Car extends React.Component {
     constructor (props) {
