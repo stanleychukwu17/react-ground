@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 //now we test immutability for arrays - method 3
-let kal = [1,2,3], jon = [];
+let kal = [1,2,3];
 let ind = kal.indexOf(2);
 let fin = [...kal.splice(0, ind), 4, ...kal.splice(ind - 1)];
 console.log(ind, fin);
