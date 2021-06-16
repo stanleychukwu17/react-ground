@@ -14,6 +14,12 @@ store_creator and subscriber
 i will try to give some of the examples below
 */
 
+let initStore = {
+    users : [],
+    'loading_data':true,
+    'err_msg':''
+};
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
