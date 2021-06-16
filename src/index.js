@@ -24,6 +24,10 @@ let LOAD_USER = 'LOAD_USER';
 let USERS_LOADED = 'USERS_LOADED';
 let LOADING_ERROR = 'LOADING_ERROR';
 
+function loadUsers () {
+    return LOAD_USER;
+}
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
