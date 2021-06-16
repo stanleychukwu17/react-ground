@@ -2,11 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-const kal = {'name':'jones', 'address':{'city':'nyc'}};
-const dam = Object.assign({}, kal);
-dam.car = 'toyota'; dam.address.city = 'maimi';
-console.log(kal, dam);
-// done testing, even the assign does a shallow copy
+//now we test immutability for arrays
+
 
 class Car extends React.Component {
     constructor (props) {
