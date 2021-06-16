@@ -2,6 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+const kal = {'name':'jones'};
+const dam = Object.assign({}, kal);
+dam.car = 'toyota';
+console.log(kal, dam);
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
