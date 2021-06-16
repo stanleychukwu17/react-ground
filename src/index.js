@@ -4,7 +4,14 @@ import './index.css';
 
 
 // what i learnt from my redux tutorials today
+/*
+initial store
+actions
+actions creator
+reducer
+store_creator and subscriber
 
+*/
 
 class Car extends React.Component {
     constructor (props) {
