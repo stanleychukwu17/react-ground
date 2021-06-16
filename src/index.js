@@ -4,7 +4,9 @@ import './index.css';
 
 //now we test immutability for arrays
 let kal = [1,2,3];
-console.log(kal);
+kal.forEach(num => {
+    console.log(num);
+});
 
 class Car extends React.Component {
     constructor (props) {
