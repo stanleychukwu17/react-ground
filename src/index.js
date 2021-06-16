@@ -24,13 +24,9 @@ let LOAD_USER = 'LOAD_USER';
 let USERS_LOADED = 'USERS_LOADED';
 let LOADING_ERROR = 'LOADING_ERROR';
 
-function loadUsers () {
-    return LOAD_USER;
-}
+function loadUsers () { return LOAD_USER; }
 
-function usersLoaded () {
-    return USERS_LOADED;
-}
+function usersLoaded () { return USERS_LOADED; }
 
 function loadingError () { return LOADING_ERROR; }
 
