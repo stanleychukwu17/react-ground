@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 //now we test immutability for arrays
-
+let kal = [1,2,3];
+console.log(kal);
 
 class Car extends React.Component {
     constructor (props) {
