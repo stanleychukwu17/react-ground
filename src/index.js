@@ -11,6 +11,7 @@ actions creator
 reducer
 store_creator and subscriber
 
+i will try to give some of the examples below
 */
 
 class Car extends React.Component {
