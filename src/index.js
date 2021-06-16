@@ -5,10 +5,8 @@ import './index.css';
 //now we test immutability for arrays - method 3
 let kal = [1,2,3], jon = [];
 let ind = kal.indexOf(2);
-let c1 = kal.splice(0, ind);
-let c3 = kal.splice(ind - 1);
-let fin = [...c1, 4, ...c3];
-console.log(ind, c1, c3, fin);
+let fin = [...kal.splice(0, ind), 4, ...kal.splice(ind - 1)];
+console.log(ind, fin);
 
 class Car extends React.Component {
     constructor (props) {
