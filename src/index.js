@@ -28,7 +28,6 @@ function loadUsers () { return LOAD_USER; }
 
 function usersLoaded () { return USERS_LOADED; }
 
-function loadingError () { return LOADING_ERROR; }
 
 class Car extends React.Component {
     constructor (props) {
