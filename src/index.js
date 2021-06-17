@@ -20,10 +20,6 @@ let initStore = {
     'err_msg':''
 };
 
-let LOAD_USER = 'LOAD_USER';
-let USERS_LOADED = 'USERS_LOADED';
-let LOADING_ERROR = 'LOADING_ERROR';
-
 
 
 class Car extends React.Component {
