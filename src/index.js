@@ -3,18 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-// what i learnt from my redux tutorials today
-/*
-initial store
-actions
-actions creator
-reducer
-store_creator and subscriber
-
-i will try to give some of the examples below
-*/
-
-
 class Car extends React.Component {
     constructor (props) {
         super(props);
