@@ -26,8 +26,6 @@ let LOADING_ERROR = 'LOADING_ERROR';
 
 function loadUsers () { return LOAD_USER; }
 
-function usersLoaded () { return USERS_LOADED; }
-
 
 class Car extends React.Component {
     constructor (props) {
