@@ -20,8 +20,6 @@ let initStore = {
     'err_msg':''
 };
 
-
-
 class Car extends React.Component {
     constructor (props) {
         super(props);
