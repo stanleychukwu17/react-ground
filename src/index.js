@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-owe from yesterday
+
 
 class Car extends React.Component {
     constructor (props) {
