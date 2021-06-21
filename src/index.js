@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// # a new project on its way
+// welcome to today
 
 class Car extends React.Component {
     constructor (props) {
