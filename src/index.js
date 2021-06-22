@@ -7,9 +7,6 @@ let keys = Object.keys(sam);
 
 for (const ky of sam) {
     console.log(ky, sam[ky])
-    if (Object.hasOwnProperty.call(sam, ky)) {
-        const element = sam[ky];
-    }
 }
 
 class Car extends React.Component {
