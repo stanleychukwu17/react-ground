@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-var x = 15;
+var x = -1;
 var y = 7;
-var z = x &= y;
+var z = x && y;
 console.log(x, z);
 
 class Car extends React.Component {
