@@ -3,10 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-let sam = 'the best is for me alone and best you';
-let reg = new RegExp('best','gi');
-console.log(reg);
-
 class Car extends React.Component {
     constructor (props) {
         super(props);
