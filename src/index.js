@@ -4,11 +4,11 @@ import './index.css';
 
 let sam = {'color': 'blue', 'background': 'red', jones:{'background': 'jonzing'}}
 let keys = Object.keys(sam);
-console.log(keys);
 
-// for (let ind = 0; ind < sam; ind++) {
-    
-// }
+for (let ind = 0; ind < keys.length; ind++) {
+    console.log(keys[ind], sam[keys[ind]]);
+}
+
 for (const ky in sam) {
     console.log(ky)
     if (Object.hasOwnProperty.call(sam, ky)) {
