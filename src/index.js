@@ -4,7 +4,7 @@ import './index.css';
 
 
 let sam = 'sam';
-console.log(sam.constructor);
+console.log( (function () {console.log('james')}).constructor );
 
 class Car extends React.Component {
     constructor (props) {
