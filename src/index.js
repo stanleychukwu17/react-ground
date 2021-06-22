@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-var x = -1;
-var y = 7;
-var z = x && y;
-console.log(x, z);
+let sam = {'color': 'blue', 'background': 'red'}
+for (const ky in sam) {
+    console.log(sam)
+    if (Object.hasOwnProperty.call(sam, ky)) {
+        const element = sam[ky];
+    }
+}
 
 class Car extends React.Component {
     constructor (props) {
