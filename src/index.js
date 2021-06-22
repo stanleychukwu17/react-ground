@@ -2,13 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-let sam = {'color': 'blue', 'background': 'red', jones:{'background': 'jonzing'}}
-let keys = Object.keys(sam);
-
-for (const ky of sam) {
-    console.log(ky, sam[ky])
-}
-
 class Car extends React.Component {
     constructor (props) {
         super(props);
