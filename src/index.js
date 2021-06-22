@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
+let sam = 'sam';
+console.log(sam.constructor);
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
