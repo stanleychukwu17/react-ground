@@ -3,8 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 let sam = {'color': 'blue', 'background': 'red'}
+console.log(sam.keys);
+
+// for (let ind = 0; ind < sam; ind++) {
+    
+// }
 for (const ky in sam) {
-    console.log(sam)
+    console.log(ky)
     if (Object.hasOwnProperty.call(sam, ky)) {
         const element = sam[ky];
     }
