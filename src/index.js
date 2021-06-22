@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-let sam = {'color': 'blue', 'background': 'red'}
-console.log(sam.keys);
+let sam = {'color': 'blue', 'background': 'red', jones:{'background': 'jonzing'}}
+let keys = Object.keys(sam);
+console.log(keys);
 
 // for (let ind = 0; ind < sam; ind++) {
     
