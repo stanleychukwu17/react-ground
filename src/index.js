@@ -4,8 +4,8 @@ import './index.css';
 
 var x = 15;
 var y = 7;
-x &= y;
-console.log(x);
+var z = x &= y;
+console.log(x, z);
 
 class Car extends React.Component {
     constructor (props) {
