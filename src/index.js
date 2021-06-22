@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-// welcome to today
+var x = 10;
+console.log(x);
 
 class Car extends React.Component {
     constructor (props) {
