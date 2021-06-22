@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-var i = 5;
-for (var i = 0; i < 10; i++) {
-    console.log(i);
-}
-console.log('final is ', i);
+var x = 15;
+var y = 7;
+x &= y;
+console.log(x);
 
 class Car extends React.Component {
     constructor (props) {
