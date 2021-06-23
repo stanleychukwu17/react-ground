@@ -3,16 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-// lets work with testing of fetch api with the aysnc method
-let url = 'https://jsonplaceholder.typicode.com/users';
-async function getU () {
-    let james = ({coords, timestamp}) => {
-        let {longitude: lng, latitude: lat} = coords;
-        console.log(lng, lat, 'time', timestamp);
-    }
-    navigator.geolocation.getCurrentPosition(james);
-}
-getU();
+// dom maninpulation commits
+
 
 class Car extends React.Component {
     constructor (props) {
