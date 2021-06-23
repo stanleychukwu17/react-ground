@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
+// lets work with testing of fetch api with the aysnc method
+let url = 'https://jsonplaceholder.typicode.com/users';
+function getU () {
+    console.log('getting');
+}
+
 class Car extends React.Component {
     constructor (props) {
         super(props);
