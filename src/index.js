@@ -6,7 +6,7 @@ import './index.css';
 // lets work with testing of fetch api with the aysnc method
 let url = 'https://jsonplaceholder.typicode.com/users';
 function getU () {
-    console.log('getting');
+    fetch(url).then(rcv => console.log(rcv));
 }
 getU();
 
