@@ -4,12 +4,13 @@ import './index.css';
 
 
 // dom maninpulation commits
-document.getElementById('put').innerHTML = '<button id="dm_btn">click me bro</button>';
-let btn = document.querySelectorAll('#put button');
+let btn = document.querySelectorAll('#put button')[0];
 console.log(btn);
 
 btn.addEventListener('click', () => {
     console.log('clicked');
+    document.getElementById('put').innerHTML = '<button id="dm_btn">click me bro</button>';
+    console.log('changed')
 })
 
 
