@@ -4,6 +4,10 @@ import './index.css';
 
 
 // dom maninpulation commits
+let btn = document.getElementById('dm_btn');
+btn.addEventListener('click', () => {
+    console.log('clicked');
+})
 
 
 class Car extends React.Component {
