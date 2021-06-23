@@ -6,8 +6,8 @@ import './index.css';
 // lets work with testing of fetch api with the aysnc method
 let url = 'https://jsonplaceholder.typicode.com/users';
 async function getU () {
-   let james = navigator.geolocation.getCurrentPosition(null);
-   console.log(james)
+    let james = ({coords, timestamp}) => { console.log(coords, 'time', timestamp); }
+    navigator.geolocation.getCurrentPosition(james);
 }
 getU();
 
