@@ -8,6 +8,7 @@ let url = 'https://jsonplaceholder.typicode.com/users';
 function getU () {
     console.log('getting');
 }
+getU();
 
 class Car extends React.Component {
     constructor (props) {
