@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-let kele = document.getElementById('kele');
-let child = kele.classList[2];
 
 
 class Car extends React.Component {
