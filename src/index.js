@@ -4,7 +4,7 @@ import './index.css';
 
 
 let kele = document.getElementById('kele');
-let children = kele.contains('#put');
+let children = kele.contains('div');
 console.log(children)
 
 
