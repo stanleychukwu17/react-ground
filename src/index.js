@@ -5,7 +5,6 @@ import './index.css';
 
 let kele = document.getElementById('kele');
 let child = kele.classList[2];
-console.log(child);
 
 
 class Car extends React.Component {
