@@ -3,15 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-// dom maninpulation commits
-let btn = document.querySelectorAll('#put button')[0];
-console.log(btn);
-
-btn.addEventListener('click', () => {
-    console.log('clicked');
-    document.getElementById('put').innerHTML = '<button id="dm_btn">click me bro</button>';
-    console.log('changed')
-})
+let kele = document.getElementById('kele');
+let children = kele.contains('#put');
+console.log(children)
 
 
 class Car extends React.Component {
