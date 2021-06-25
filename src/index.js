@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
-let kele = document.getElementById('kele');
-let children = kele.contains('div');
-console.log(children)
+let btn = document.getElementsByTagName('button')
+// let kele = document.getElementById('kele');
+// let children = kele.contains(btn);
+console.log(btn)
 
 
 class Car extends React.Component {
