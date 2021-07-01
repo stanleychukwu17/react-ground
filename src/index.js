@@ -13,7 +13,9 @@ function Car (props) {
         <div>
             <div>This is my car {color}</div>
             <div><button onClick={changeColor.bind(this, (color === 'yellow') ? 'blue' : 'yellow')}>change color</button></div>
-            <div><button onClick={changeColor}>Test state</button></div>
+            <div><button onClick={()=>setMan(cur => {
+                
+            })}>Test state</button></div>
         </div>
     );
 }
