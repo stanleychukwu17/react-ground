@@ -12,9 +12,11 @@ function Car (props) {
     return (
         <div>
             <div>This is my car {color}</div>
+            <div>This is my name {man}</div>
             <div><button onClick={changeColor.bind(this, (color === 'yellow') ? 'blue' : 'yellow')}>change color</button></div>
             <div><button onClick={()=>setMan(cur => {
-                
+                console.log(cur);
+                return 'vanguard'
             })}>Test state</button></div>
         </div>
     );
