@@ -1,24 +1,22 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
 
 function Car (props) {
-    this.state = {'color':'blue'};
+    let [color, setColor] = useState('blue');
 
-    changeColor (color) {
-        let nxt = (this.state.color === 'blue') ? 'red' : 'blue';
-        this.setState({color: nxt});
+    let changeColor = (wch) => {
+        setColor(wch);
     }
 
     return (
         <div>
-            <div>This is my car {this.state.color}</div>
-            <div><button onClick={this.changeColor.bind(this, 'yellow')}>change color</button></div>
+            <div>This is my car {color}</div>
+            <div><button onClick={changeColor.bind(this, (color === 'yellow') ? 'blue' : 'yellow')}>change color</button></div>
         </div>
     );
 }
-
 
 
 ReactDOM.render(<Car color="orange" />, document.getElementById('root'));
