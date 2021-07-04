@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from 'react';
 
-export const useFetch = (url) => {
+export const useFetch = React.memo((url) => {
     let [data, setData] = useState(null);
     let reCount = useRef(0);
     reCount.current++;
@@ -11,4 +11,4 @@ export const useFetch = (url) => {
     }, [url])
 
     return {data}
-}
+})
