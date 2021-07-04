@@ -5,13 +5,6 @@ import './index.css';
 import {useFetch} from './useFetch';
 
 
-function longestWord (info) {
-    if (!info) { return ''; }
-    const dts = info.quote;
-
-    return `${dts}`
-}
-
 function Car (props) {
     let [color, setColor] = useState('blue');
 
