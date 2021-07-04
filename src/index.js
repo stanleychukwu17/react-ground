@@ -10,7 +10,7 @@ let obj = {
     c: ['green']
 };
 
-console.log(Object.values(obj));
+console.log(Object.entries(obj));
 
 function longestWord (info) {
     if (!info) { return ''; }
