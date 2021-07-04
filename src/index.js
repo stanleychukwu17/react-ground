@@ -9,7 +9,6 @@ function Car (props) {
     let [man, setMan] = useState('john');
 
     let {data} = useFetch('https://api.kanye.rest/');
-    console.log(data);
 
     let changeColor = (wch) => setColor(wch);
 
