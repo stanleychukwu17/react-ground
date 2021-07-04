@@ -6,9 +6,7 @@ export const useFetch = (url) => {
     reCount.current++;
 
     useEffect(() => {
-        fetch(url).then(x =>x.json().then(x => {
-            setData(x); setLoading(false);
-        }));
+        fetch(url).then(x =>x.json().then(x => { setData(x); }));
     }, [url])
 
     console.log('re-rendered', data, reCount)
