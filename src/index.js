@@ -8,8 +8,8 @@ function Car (props) {
     let [color, setColor] = useState('blue');
     let [man, setMan] = useState('john');
 
-    let {data, loading} = useFetch('https://api.kanye.rest/');
-    console.log(data, loading);
+    let {data} = useFetch('https://api.kanye.rest/');
+    console.log(data);
 
     let changeColor = (wch) => setColor(wch);
 
