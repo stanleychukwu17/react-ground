@@ -4,6 +4,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {useFetch} from './useFetch';
 
+let obj = {
+    a: ['blue','red'],
+    b: ['yellow'],
+    c: ['green']
+};
+
+console.log(obj);
+
 function longestWord (info) {
     console.log('recreated word');
     if (!info) { return ''; }
