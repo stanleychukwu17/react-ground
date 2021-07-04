@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 
+import './index.css';
+import {useFetch} from './useFetch';
 
 function Car (props) {
     let [color, setColor] = useState('blue');
     let [man, setMan] = useState('john');
+
+    let {data, loading} = useFetch('https://api.kanye.rest/');
+    console.log(data, loading);
 
     let changeColor = (wch) => setColor(wch);
 
