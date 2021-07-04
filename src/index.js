@@ -1,25 +1,31 @@
-import React, {useState} from 'react';
+import React, {useState, useMemo} from 'react';
 import ReactDOM from 'react-dom';
 
 import './index.css';
 import {useFetch} from './useFetch';
 
+function longestWord (info) {
+    console.log('recreated word');
+    if (!info) { return ''; }
+    const dts = info.quote;
+
+    return `${dts}, me!`
+}
+
 function Car (props) {
     let [color, setColor] = useState('blue');
-    let [man, setMan] = useState('john');
 
     let {data} = useFetch('https://api.kanye.rest/');
 
     let changeColor = (wch) => setColor(wch);
 
+    let myG = useMemo(()=>longestWord(data), [data, longestWord])
+
     return (
         <div>
             <div>This is my car {color}</div>
-            <div>This is my name {man}</div>
             <div><button onClick={changeColor.bind(this, (color === 'yellow') ? 'blue' : 'yellow')}>change color</button></div>
-            <div><button onClick={()=>setMan(cur => {
-                return 'vanguard'
-            })}>Test state</button></div>
+            <div className="">{myG}</div>
         </div>
     );
 }
