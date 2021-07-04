@@ -13,7 +13,6 @@ let obj = {
 console.log(obj);
 
 function longestWord (info) {
-    console.log('recreated word');
     if (!info) { return ''; }
     const dts = info.quote;
 
