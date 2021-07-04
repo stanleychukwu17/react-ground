@@ -9,6 +9,5 @@ export const useFetch = (url) => {
         fetch(url).then(x =>x.json().then(x => { setData(x); }));
     }, [url])
 
-    console.log('re-rendered', data, reCount)
     return {data}
 }
