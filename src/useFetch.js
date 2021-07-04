@@ -10,7 +10,7 @@ export const useFetch = (url) => {
         fetch(url).then(x =>x.json().then(x => {
             setData(x); setLoading(false);
         }));
-    }, [url])
+    })
     console.log('re-rendered', data, loading, reCount)
     return {data, loading}
 }
