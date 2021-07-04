@@ -4,13 +4,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import {useFetch} from './useFetch';
 
-let obj = {
-    a: ['blue','red'],
-    b: ['yellow'],
-    c: ['green']
-};
-
-console.log(Object.entries(obj));
 
 function longestWord (info) {
     if (!info) { return ''; }
