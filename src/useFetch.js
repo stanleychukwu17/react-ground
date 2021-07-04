@@ -7,9 +7,10 @@ export const useFetch = (url) => {
 
     useEffect(() => {
         fetch(url).then(x =>x.json().then(x => {
-            setData(x);
+            setData(x); setLoading(false);
         }));
     }, [url])
 
+    console.log('re-rendered', data, reCount)
     return {data}
 }
