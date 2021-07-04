@@ -9,7 +9,7 @@ function longestWord (info) {
     if (!info) { return ''; }
     const dts = info.quote;
 
-    return `${dts}, me!`
+    return `${dts}`
 }
 
 function Car (props) {
