@@ -15,7 +15,8 @@ function longestWord (info) {
 function Car (props) {
     let [color, setColor] = useState('blue');
 
-    let {data} = useFetch('https://api.kanye.rest/');
+    // let {data} = useFetch('https://api.kanye.rest/');
+    let {data} = useFetch();
 
     let changeColor = (wch) => setColor(wch);
 
